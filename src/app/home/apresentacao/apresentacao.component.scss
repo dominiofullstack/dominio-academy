@@ -1,0 +1,54 @@
+:host {
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .video-apresentacao {
+            margin-bottom: -13rem;
+            position: relative;
+    
+            iframe {
+                position: absolute;
+                z-index: 2;
+                left: 75px;
+                top: 10px;
+            }
+    
+            img {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    .banner-promocional {
+        box-sizing: border-box;
+        height: 530px;
+        background: url("/ondas.svg");
+        font-family: Share, sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: #F6F6F6;
+        padding-top: 15rem;
+
+        p:first-child {
+            font-size: 24px;
+            line-height: 27.05px;
+        }
+
+        p:nth-child(2) {
+            font-size: 24px;
+            line-height: 27.05px;
+            background-color: #2849FF;
+            padding: 1rem 0;
+            text-transform: uppercase;
+            margin-top: 3rem;
+        }
+
+        p:last-child {
+            font-size: 20px;
+            line-height: 22.54px;
+        }
+    }
+}

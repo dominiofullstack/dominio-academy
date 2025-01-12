@@ -1,0 +1,26 @@
+<section class="conta">
+    <div class="banner">
+        <img src="logo.svg" class="logo">
+    </div>
+    <form class="formulario">
+        <span class="titulo">
+            Criar uma conta
+        </span>
+        <app-input label="Nome" placeholder="Digite seu nome completo" id="nome" type="text"></app-input>
+        <app-input label="E-mail" placeholder="Digite seu e-mail" id="email" type="text"></app-input>
+        <div class="divisor"></div>
+        <app-input label="Senha" placeholder="Crie sua senha" id="senha" type="password"></app-input>
+        <app-input label="Repita sua senha" placeholder="Repita sua senha" id="repita-senha" type="password"></app-input>
+        <div class="regras-senha">
+            <span class="titulo-regras">Recomendamos uma senha com:</span>
+            <ul class="regras">
+                <li>Pelo menos 8 caracteres</li>
+                <li>Letras maiúsculas e minúsculas</li>
+                <li>Números e símbolos</li>
+            </ul>
+        </div>
+        <div class="botoes">
+            <app-button-default text="Próximo" [width]="25" (onClick)="acessarAtivacao()"></app-button-default>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,29 @@
+:host {
+    .btn-default {
+        border-radius: .5rem;
+        padding: 1rem;
+        border: none;
+        font-family: Share, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 18.03px;
+        cursor: pointer;
+        width: 30rem;
+        text-transform: uppercase;
+    }
+
+    .primario {
+        background-color: #000FD9;
+        color: #F6F6F6;
+    }
+
+    .secundario {
+        background-color: #81ACFF;
+        color: #00074D;
+    }
+
+    .terciario {
+        background-color: transparent;
+        color: #000FD9;
+    }
+}

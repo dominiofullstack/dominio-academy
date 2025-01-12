@@ -1,0 +1,18 @@
+<section class="conta">
+    <div class="banner">
+        <img src="logo.svg" class="logo">
+    </div>
+    <form class="formulario">
+        <span class="titulo">
+            Acessar sua conta
+        </span>
+        <app-input label="E-mail" placeholder="Insira seu e-mail" id="email" type="text"></app-input>
+        <app-input label="Senha" placeholder="Insira sua senha" id="senha" type="password"></app-input>
+        <a class="esqueci-senha">Esqueci minha senha</a>
+        <div class="botoes">
+            <app-button-default text="Entrar" [width]="25"></app-button-default>
+            <span class="texto-info">Não tem uma conta?</span>
+            <app-button-default text="Cadastre-se" [width]="25" (onClick)="acessarCadastro()"></app-button-default>
+        </div>
+    </form>
+</section>

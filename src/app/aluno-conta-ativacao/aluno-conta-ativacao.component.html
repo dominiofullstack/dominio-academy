@@ -1,0 +1,19 @@
+<section class="conta">
+    <div class="banner">
+        <img src="logo.svg" class="logo">
+    </div>
+    <form class="formulario">
+        <span class="titulo">
+            Confirme seu E-mail
+        </span>
+        <span class="subtitulo">
+            Um código foi enviado para seu e-mail. Você tem 15 minutos para inseri-lo no campo abaixo. Se não validar dentro desse prazo, será necessário gerar e enviar um novo código.
+        </span>
+        <app-input label="Código" placeholder="Insira o código de validação" id="codigo" type="text"></app-input>
+        <div class="botoes">
+            <app-button-default text="Confirmar" [width]="25"></app-button-default>
+            <app-button-default text="Reenviar código" [width]="25" estilo="secundario"></app-button-default>
+            <app-button-default text="Voltar ao cadastro" [width]="25" estilo="terciario"></app-button-default>
+        </div>
+    </form>
+</section>

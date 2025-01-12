@@ -1,0 +1,37 @@
+:host {
+    .card-indicadores {
+        .indicadores {
+            margin: 0;
+            list-style-type: none;
+            background: linear-gradient(90deg, #4F7BFF 0%, #000FD9 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5rem;
+            padding: 2rem;
+
+            .indicador {
+                color: #F6F6F6;
+
+                .titulo {
+                    margin-top: .5rem;
+                    font-family: Share, sans-serif;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 27.05px;
+                }
+
+                .subtitulo {
+                    font-family: Share, sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+}

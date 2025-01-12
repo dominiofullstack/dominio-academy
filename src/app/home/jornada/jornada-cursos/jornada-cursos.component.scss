@@ -1,0 +1,10 @@
+:host {
+    .cursos {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 3rem 0 0 0;
+        gap: 4rem;
+    }
+}

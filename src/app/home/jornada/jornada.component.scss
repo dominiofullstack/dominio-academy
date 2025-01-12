@@ -1,0 +1,59 @@
+:host {
+    .section-jornada {
+        background-color: #1F1F1F;
+        box-sizing: border-box;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+
+        .elipse-gradiente {
+            width: 1700px;
+            height: 1000px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(40, 73, 255, 0.5) 0%, rgba(31, 31, 31, 0) 100%);
+            position: absolute;
+            bottom: -172.5px;
+            left: -872.5px;
+        }
+
+        .circle-gradiente {
+            width: 935px;
+            height: 935px;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(40, 73, 255, 0.4) 0%, rgba(31, 31, 31, 0) 100%);
+            position: absolute;
+            right: -467.5px;
+            bottom: -367.5px;
+        }
+
+        .card-titulo {
+            display: inline-block;
+            padding: 24px 115px 24px 115px;
+            border-radius: 8px;
+            border: 3px solid #81ACFF;
+            box-shadow: 0px 0px 8px 0px #B0CEFF, 0px 0px 8px 0px #B0CEFF inset;
+            margin: 3rem 0 5rem 0;
+
+            .titulo {
+                margin: 0;
+                font-family: Share, sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40.57px;
+                color: #F6F6F6;
+                text-transform: uppercase;
+            }
+        }
+
+        .legenda-trilha {
+            padding: 2rem 0 5rem 0;
+
+            .paragrafo {
+                font-family: Share, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #F6F6F6;
+                margin: 0;
+            }
+        }
+    }
+}

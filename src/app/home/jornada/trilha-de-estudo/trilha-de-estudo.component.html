@@ -1,0 +1,21 @@
+<div class="trilha">
+    <app-montanha class="montanha" cor="#B0CEFF" [altura]="220" [largura]="427"></app-montanha>
+    <app-montanha class="montanha" cor="#4F7BFF" [altura]="341" [largura]="427"></app-montanha>
+    <app-montanha class="montanha" cor="#2849FF" [altura]="451" [largura]="427"></app-montanha>
+</div>
+<ul class="pontos">
+    @for (marco of marcos; track marco.numero; let idx = $index) {
+        <li class="ponto" [style.marginBottom.rem]="marco.posicaoMontanha">
+            <span>{{ marco.numero }}</span>
+        </li>
+        @if (!$last) {
+            <li class="divisor">
+                <span class="linha"
+                    [style.transform]="getGrausRotacaoLinha(idx)"
+                    [style.width]="getLarguraLinha(idx)"
+                    [style.marginBottom.rem]="marco.posicaoMontanha + 1">
+                </span>
+            </li>
+        }
+    }
+</ul>

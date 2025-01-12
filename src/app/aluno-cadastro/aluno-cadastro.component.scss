@@ -1,0 +1,76 @@
+:host {
+    .conta {
+        background: linear-gradient(117.62deg, #2849FF -0.55%, #00074D 100.64%);
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+
+        .banner {
+            flex-basis: 66%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .logo {
+                width: 272px;
+                height: 237.46px;
+            }
+        }
+        
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            flex-basis: 34%;
+            flex-shrink: 0;
+            height: 100vh;
+            overflow-y: scroll;
+            background: #F6F6F6;
+            padding: 2rem;
+            box-sizing: border-box;
+
+            .titulo {
+                font-family: Share, sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40.57px;
+                color: #000000;
+                margin-bottom: 1rem;
+            }
+
+            .divisor {
+                margin: .5rem 0;
+                border: 1px solid #888888;
+            }
+
+            .regras-senha {
+                margin-top: .5rem;
+                font-family: Share, sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #454545;
+
+                .titulo-regras {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 18.03px;
+                }
+
+                .regras {
+                    padding-left: 1.25rem;
+                    margin: .25rem 0 0 0;
+
+                    li::marker {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .botoes {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

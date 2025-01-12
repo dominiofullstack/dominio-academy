@@ -1,0 +1,78 @@
+:host {
+    .noticias {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem 0;
+        gap: 5rem;
+
+        .vagas-ano {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+
+            .ano {
+                font-family: Share, sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40.57px;
+                text-align: center;
+                color: #454545;
+            }
+
+            .vagas {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: .2rem;
+
+                .vaga img {
+                    width: 525px;
+                    height: 119.69px;
+                    border-radius: 8px;
+                    border: 2px solid #000FD9;
+                    box-shadow: -1rem 1rem 0 0 #81ACFF;
+                }
+            }
+        }
+
+        .action {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            .destaque {
+                font-family: Share, sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 15.78px;
+                color: #FFFFFF;
+                background: #000FD9;
+                padding: 4px 12px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+            }
+
+            .titulo {
+                font-family: Share, sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 27.05px;
+                color: #1F1F1F;
+            }
+            .subtitulo {
+                font-family: Share, sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #1F1F1F;
+                margin: 1.5rem 0;
+            }
+        }
+    }
+}
