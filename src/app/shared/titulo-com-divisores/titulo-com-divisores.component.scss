@@ -1,0 +1,30 @@
+:host {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .titulo {
+            display: block;
+            font-family: Share, sans-serif;
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 3em;
+            color: #3D3D3D;
+            width: 50%;
+            text-align: center;
+            margin: 0;
+        }
+
+        .divisor {
+            border: 1px solid #00000040;
+            display: block;
+            width: 25%;
+        }
+
+        .destaque {
+            color: #000FD9;
+        }
+    }
+}
