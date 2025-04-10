@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-formacao-list',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './formacao-list.component.scss'
 })
 export class FormacaoListComponent {
+
+  @Input() margin?: number;
 
 }
