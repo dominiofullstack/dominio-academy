@@ -3,6 +3,18 @@
         padding: 3.5rem 0;
     }
 
+    .banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('/logo.svg');
+        background-repeat: no-repeat;
+        background-position: right -16rem top 8rem;
+        background-size: 500px;
+        opacity: 0.05;
+        z-index: -1;
+    }
+
     .sub-titulo {
         color: #1F1F1F;
         font-family: Share, sans-serif;
