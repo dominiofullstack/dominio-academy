@@ -1,0 +1,22 @@
+:host {
+    nav {
+        display: flex;
+        align-items: center;
+        background-color: #E7E7E7;
+        justify-content: space-between;
+        padding: 0 4em;
+        height: 64px;
+        box-shadow: 0px 4px 8px 0px #00000026;
+
+        .brand {
+            color: #3D3D3D;
+            font-family: Share, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+
+            .destaque {
+                color: #000FD9;
+            }
+        }
+    }
+}
