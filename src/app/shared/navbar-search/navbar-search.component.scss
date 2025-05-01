@@ -18,5 +18,42 @@
                 color: #000FD9;
             }
         }
+
+        .opcoes {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .moedas {
+                align-items: center;
+                background-color: #F6F6F6;
+                border-radius: 1.5rem;
+                display: flex;
+                gap: .75rem;
+                padding: .5rem 1rem;
+
+                .icone {
+                    color: #000FD9;
+                }
+
+                .quantidade {
+                    color: #454545;
+                    font-family: Share, sans-serif;
+                    font-weight: 400;
+                }
+            }
+
+            .btn-perfil {
+                background-image: url('/img-perfil.jpg');
+                border: none;
+                border-radius: 100%;
+                height: 40px;
+                width: 40px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
