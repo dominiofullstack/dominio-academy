@@ -1,5 +1,69 @@
 :host {
     .lista-cursos {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         font-family: Share, sans-serif;
+
+        .titulo {
+            color: #1F1F1F;
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .painel-cursos {
+            display: flex;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .filtros {
+                color: #454545;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+
+            .cursos {
+                .curso {
+                    .detalhes {
+                        .nome {
+                            color: #1F1F1F;
+                            font-size: 2.25rem;
+                            font-weight: 700;
+                        }
+
+                        .nivel {
+                            color: #454545;
+                            font-weight: 700;
+                            font-size: 1rem;
+                            
+                            span {
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+    
+                                .icone {
+                                    border-radius: 5px;
+                                    color: white;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    padding: 0 2px;
+                                }
+                            }
+                        }
+
+                        .progresso {
+                            color: #1F1F1F;
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
