@@ -2,7 +2,10 @@
     <h2 class="titulo">Cursos em andamento</h2>
     <div class="painel-cursos">
         <ul class="filtros">
-            <li class="filtro">Últimos acessados</li>
+            <li class="filtro">
+                <span>Últimos acessados</span>
+                <div class="filtro-dot"></div>
+            </li>
             <li class="filtro">HTML/CSS</li>
             <li class="filtro">Java</li>
             <li class="filtro">Angular</li>
@@ -11,7 +14,7 @@
         </ul>
         <ul class="cursos">
             <li class="curso">
-                <span class="imagem"></span>
+                <span class="imagem curso-java"></span>
                 <ul class="detalhes">
                     <li class="nome">
                         <span>Curso Avançado de Programação Java</span>
@@ -23,16 +26,18 @@
                         </span>
                     </li>
                     <li>
-                        <span class="progresso">39% concluído</span>
+                        <span class="progress-bar">
+                            <span class="progress">39% concluído</span>
+                        </span>
                     </li>
                     <li class="botoes">
-                        <button class="continuar">Continuar</button>
-                        <button class="aulas">Ver aulas do curso</button>
+                        <app-button-default text="Continuar" [width]="14"></app-button-default>
+                        <app-button-default estilo="terciario" text="Ver aulas do curso" [width]="14"></app-button-default>
                     </li>
                 </ul>
             </li>
             <li class="curso">
-                <span class="imagem"></span>
+                <span class="imagem curso-postgresql"></span>
                 <ul class="detalhes">
                     <li class="nome">
                         <span>Curso Intermediário de PostgreSQL</span>
@@ -44,16 +49,18 @@
                         </span>
                     </li>
                     <li>
-                        <span class="progresso">39% concluído</span>
+                        <span class="progress-bar">
+                            <span class="progress">39% concluído</span>
+                        </span>
                     </li>
                     <li class="botoes">
-                        <button class="continuar">Continuar</button>
-                        <button class="aulas">Ver aulas do curso</button>
+                        <app-button-default text="Continuar" [width]="14"></app-button-default>
+                        <app-button-default estilo="terciario" text="Ver aulas do curso" [width]="14"></app-button-default>
                     </li>
                 </ul>
             </li>
             <li class="curso">
-                <span class="imagem"></span>
+                <span class="imagem curso-javascript"></span>
                 <ul class="detalhes">
                     <li class="nome">
                         <span>Curso de JavaScript para Iniciantes</span>
@@ -65,11 +72,13 @@
                         </span>
                     </li>
                     <li>
-                        <span class="progresso">39% concluído</span>
+                        <span class="progress-bar">
+                            <span class="progress">39% concluído</span>
+                        </span>
                     </li>
                     <li class="botoes">
-                        <button class="continuar">Continuar</button>
-                        <button class="aulas">Ver aulas do curso</button>
+                        <app-button-default text="Continuar" [width]="14"></app-button-default>
+                        <app-button-default estilo="terciario" text="Ver aulas do curso" [width]="14"></app-button-default>
                     </li>
                 </ul>
             </li>

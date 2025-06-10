@@ -4,6 +4,7 @@
         display: flex;
         flex-direction: column;
         font-family: Share, sans-serif;
+        padding: 5rem;
 
         .titulo {
             color: #1F1F1F;
@@ -14,6 +15,7 @@
 
         .painel-cursos {
             display: flex;
+            gap: 1rem;
 
             ul {
                 list-style-type: none;
@@ -25,15 +27,79 @@
                 color: #454545;
                 font-size: 1.5rem;
                 font-weight: 700;
+                padding: 3rem 0;
+                width: 21rem;
+
+                .filtro {
+                    display: flex;
+                    border-radius: 4px;
+                    padding: 1rem 1.5rem;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &:first-child {
+                        background: #B0CEFF;
+                        color: #0B19A4;
+
+                        .filtro-dot {
+                            width: .5rem;
+                            height: .5rem;
+                            border-radius: 50%;
+                            background-color: #0B19A4;
+                        }
+                    }
+                }
             }
 
             .cursos {
+                padding: 3rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
                 .curso {
+                    background: #E7E7E7;
+                    border: 1px solid #B0B0B0;
+                    padding: 1.5rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    gap: 2rem;
+                    max-width: 700px;
+                    box-sizing: border-box;
+
+                    .imagem {
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        box-sizing: border-box;
+                        display: block;
+                        height: 10rem;
+                        width: 10rem;
+                    }
+
+                    .curso-java {
+                        background-image: url('/cursos/curso-java.svg');
+                    }
+
+                    .curso-postgresql {
+                        background-image: url('/cursos/curso-postgresql.svg');
+                    }
+
+                    .curso-javascript {
+                        background-image: url('/cursos/curso-javascript.svg');
+                    }
+
                     .detalhes {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
                         .nome {
                             color: #1F1F1F;
                             font-size: 2.25rem;
                             font-weight: 700;
+                            line-height: 100%;
                         }
 
                         .nivel {
@@ -44,7 +110,7 @@
                             span {
                                 display: flex;
                                 align-items: center;
-                                gap: 5px;
+                                gap: .5rem;
     
                                 .icone {
                                     border-radius: 5px;
@@ -56,10 +122,22 @@
                             }
                         }
 
-                        .progresso {
-                            color: #1F1F1F;
-                            font-size: 0.875rem;
-                            font-weight: 400;
+                        .progress-bar {
+                            background: #D1D1D1;
+                            border-radius: .5rem;
+                            display: block;
+                            width: 100%;
+
+                            .progress {
+                                background: #81ACFF;
+                                border-radius: .5rem;
+                                color: #1F1F1F;
+                                display: block;
+                                font-size: 0.875rem;
+                                font-weight: 400;
+                                padding: .5rem;
+                                width: 39%;
+                            }
                         }
                     }
                 }

@@ -1,0 +1,42 @@
+:host {
+    .section-ia {
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                    url('/background/background-ia.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 35rem;
+        width: 100%;
+
+        .abrir-chat-ia {
+            font-family: Share;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #F6F6F6;
+            display: block;
+            width: 295px;
+
+            .titulo {
+                background: #000FD9;
+                font-size: 14px;
+                color: #FFFFFF;
+                padding: 4px 12px;
+            }
+
+            .texto {
+                margin: 8px 0 24px 0;
+            }
+        }
+
+        .icone-chat-ia {
+            background-image: url('/ia/chat-ia.svg');
+            display: block;
+            width: 308px;
+            height: 190px;
+        }
+    }
+}
