@@ -1,0 +1,29 @@
+:host {
+    .msg-404 {
+        width: 100%;
+        height: calc(100vh - 64px);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+
+        .img {
+            background-image: url("/404.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 344px;
+            height: 197px;
+        }
+
+        p {
+            font-family: Share;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 100%;
+            margin: 0;
+        }
+    }
+}
