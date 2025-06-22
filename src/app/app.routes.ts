@@ -6,6 +6,7 @@ import { AlunoContaAtivacaoComponent } from './aluno-conta-ativacao/aluno-conta-
 import { CursosDeslogadoComponent } from './cursos-deslogado/cursos-deslogado.component';
 import { CursosLogadoComponent } from './cursos-logado/cursos-logado.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { AulaComponent } from './aula/aula.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
     { path: 'cursos-deslogado', component: CursosDeslogadoComponent },
     { path: 'cursos-logado', component: CursosLogadoComponent },
     { path: 'pagina-nao-encontrada', component: PaginaNaoEncontradaComponent },
+    { path: 'aula', component: AulaComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
