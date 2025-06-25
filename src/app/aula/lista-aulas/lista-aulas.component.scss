@@ -21,21 +21,21 @@
         }
         .info-curso {
             padding: 2rem 1.5rem 1.5rem;
-            .progresso {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                gap: 1.75rem;
-                .progress-bar {
-                    background-color: #D1D1D1;
-                    display: block;
-                    width: 100%;
+        }
+        .progresso {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.75rem;
+            .progress-bar {
+                background-color: #D1D1D1;
+                display: block;
+                width: 100%;
 
-                    .progress {
-                        border: 2px solid #81ACFF;
-                        display: block;
-                        width: 50%;
-                    }
+                .progress {
+                    border: 2px solid #81ACFF;
+                    display: block;
+                    width: 50%;
                 }
             }
         }
@@ -68,21 +68,34 @@
                     }
                 }
             }
-            .modulos {
+            .modulos, .aulas-modulo {
                 margin: 0;
                 padding: 0;
                 list-style: none;
                 .modulo {
-                    align-items: center;
                     background: #4F7BFF;
                     border-radius: 4px;
+                    padding: 1rem .5rem;
+                }
+                .aula {
+                    padding: .5rem 1.25rem;
+                }
+                .modulo, .aula {
+                    align-items: center;
                     display: flex;
                     gap: 1rem;
                     justify-content: space-between;
                     margin-top: .5rem;
-                    padding: 1rem .5rem;
                     span {
                         flex-grow: 1;
+                    }
+                }
+                .progresso {
+                    padding: 0 1.25rem;
+                    .progress-bar {
+                        .progress {
+                            border: 1px solid #81ACFF;
+                        }
                     }
                 }
             }
