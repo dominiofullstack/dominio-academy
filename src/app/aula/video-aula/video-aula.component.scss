@@ -1,0 +1,28 @@
+:host {
+    .video-aula {
+        width: 100%;
+        .header {
+            font-family: Share, sans-serif;
+            padding: 1.25rem 2rem;
+            h3 {
+                margin: 0;
+                font-weight: 700;
+                font-size: 1.5rem;
+            }
+            .min {
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+        .video {
+            display: flex;
+            align-items: stretch;
+
+            iframe {
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                border: none;
+            }
+        }
+    }
+}

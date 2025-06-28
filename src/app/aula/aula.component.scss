@@ -2,5 +2,9 @@
     .aula {
         background-color: #1F1F1F;
         color: #FFFFFF;
+        display: flex;
+        app-video-aula {
+            flex: 1;
+        }
     }
 }
