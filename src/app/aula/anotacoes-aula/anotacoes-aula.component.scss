@@ -1,0 +1,57 @@
+:host {
+    * {
+        font-family: Share, sans-serif;
+        box-sizing: border-box;
+    }
+    .anotacoes {
+        border-radius: 1rem;
+        margin: 1.5rem;
+        overflow: hidden;
+        background: #3D3D3D;
+        .header {
+            background: linear-gradient(90deg, #4F7BFF 0%, #000FD9 100%);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+        .formulario {
+            align-items: center;
+            display: flex;
+            gap: 1rem;
+            padding: .5rem .75rem;
+            #anotacao {
+                flex: 1;
+                ::ng-deep .input-group {
+                    padding: 0;
+                }
+            }
+            
+        }
+        .lista {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            list-style-type: none;
+            margin: 0;
+            padding: 0 1.5rem .5rem;
+            .anotacao {
+                background: #1F1F1F;
+                padding: .75rem 1rem;
+                border-radius: .5rem;
+                .texto, .data-hora {
+                    display: block;
+                    width: 100%;
+                    font-weight: 400;
+                }
+                .texto {
+                    font-size: 1rem;
+                    margin-bottom: 4px;
+                }
+                .data-hora {
+                    color: #B0B0B0;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,6 @@
 <div class="input-group">
-    <label for="input{{ id }}">{{ label }}</label>
+    @if (!!label) {
+        <label for="input{{ id }}">{{ label }}</label>
+    }
     <input id="input{{ id }}" type="{{ type }}" placeholder="{{ placeholder }}" />
 </div>
