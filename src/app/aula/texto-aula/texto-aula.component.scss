@@ -1,0 +1,46 @@
+:host {
+    * {
+        box-sizing: border-box;
+        font-family: Share, sans-serif;
+        scrollbar-width: thin;
+        scrollbar-color: #888 transparent;
+    }
+    *::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .texto-aula {
+        background: #3D3D3D;
+        padding: 5rem 7rem;
+        height: 100vh;
+        overflow-y: scroll;
+        .container {
+            background: #1F1F1F;
+            border-radius: 1rem;
+            padding: 4rem;
+            .titulo {
+                margin: 0 0 1rem;
+                font-weight: 700;
+                font-size: 2.25rem;
+            }
+            p, li {
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 150%;
+                color: #B0B0B0;
+            }
+            li {
+                margin: .5rem;
+            }
+        }
+    }
+}
